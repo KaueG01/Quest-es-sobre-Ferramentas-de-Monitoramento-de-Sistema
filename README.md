@@ -39,20 +39,20 @@ Resposta: O Process ID (PID) é um identificador numérico exclusivo que o siste
 
 5.  **Diferença na Interface:** Descreva as principais diferenças na interface do usuário (UI) entre as três ferramentas. Qual delas é mais orientada a comandos de texto e qual é mais visual?
 
-Resposta: 
+Resposta: As principais diferenças na interface do usuário (UI) residem na natureza da interação: uma interface gráfica de usuário (GUI) é visual, utilizando botões, ícones e elementos gráficos para interação, enquanto uma interface de linha de comando (CLI) é orientada a texto, onde o usuário digita comandos para operar o sistema. A escolha entre elas depende da aplicação; GUIs são mais intuitivas para a maioria dos usuários, enquanto CLIs são preferidas por utilizadores avançados e para automação. 
 
 6.  **Monitoramento de Rede:** Como o Monitor de Atividade e o Gerenciador de Tarefas permitem inspecionar o tráfego de rede de diferentes aplicativos? Qual comando ou técnica similar é usada no Linux para obter informações detalhadas sobre a atividade de rede de processos?
 
-Resposta: 
+Resposta: O Monitor de Atividade (macOS) e o Gerenciador de Tarefas (Windows) exibem o tráfego de rede por aplicativo na aba de rede, mostrando o uso de dados e o número de conexões, enquanto no Linux ferramentas de linha de comando como netstat, nethogs e tcpdump fornecem informações semelhantes, com nethogs sendo particularmente útil para vincular o uso de rede a processos específicos (PIDs). 
 
 7.  **Análise de Disco:** O Monitor de Atividade e o Gerenciador de Tarefas possuem abas ou seções dedicadas para monitorar a atividade do disco (leitura/escrita). Qual a importância de monitorar o disco e como o `top` (ou uma ferramenta complementar do Linux) pode ser usado para obter essa mesma informação?
 
-Resposta: 
+Resposta: Monitorar o disco é crucial para identificar gargalos de desempenho, uso excessivo, verificar falhas e otimizar o sistema. No Linux, ferramentas como top e iotop podem ser usadas para obter informações detalhadas sobre a atividade de disco, incluindo a leitura e escrita por processos específicos. 
 
 8.  **Hierarquia de Processos:** Em que medida o Monitor de Atividade e o Gerenciador de Tarefas são capazes de exibir a hierarquia de processos (processos pais e filhos)? E como o `top` pode ser configurado ou complementado com outro comando para mostrar essa hierarquia?
 
-Resposta: 
+Resposta: O Monitor de Atividade (no macOS) e o Gerenciador de Tarefas (no Windows) permitem visualizar a hierarquia de processos ao permitir a expansão de itens na interface gráfica para revelar os processos filhos. No entanto, a forma mais detalhada de ver essa relação, especialmente no Windows, é através da aba "Detalhes", que pode ser complementada pela aba "Serviços" e a visualização de "Serviços" para entender os processos associados. Para o top no Linux, você pode usar a opção -H (para threads) ou H (no modo interativo) para ver mais detalhes, enquanto um comando como pstree é mais eficaz para exibir a árvore de processos diretamente no terminal. 
 
 9.  **Uso em Servidores vs. Desktops:** Qual das três ferramentas é mais adequada para monitoramento em ambientes de servidor (especialmente sem interface gráfica)? Justifique sua resposta, explicando como as características de cada uma se encaixam melhor em cenários de servidor ou de desktop.
 
-Resposta: 
+Resposta: Para ambientes de servidor sem interface gráfica, o Nagios é a ferramenta mais adequada, pois é uma solução de código aberto, focada em monitoramento de infraestrutura e alertas proativos de rede, características ideais para um ambiente "headless". Enquanto o Wireshark é excelente para análise profunda de pacotes, mas mais técnico e não para monitoramento geral, e o Dotcom-Monitor é uma ferramenta comercial mais abrangente, mas com um custo associado e um foco que pode não ser o ideal para servidores sem GUI. 
